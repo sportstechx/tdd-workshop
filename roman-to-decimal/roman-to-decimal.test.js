@@ -8,3 +8,7 @@ test('I is 1 in decimal', () => {
   expect(romanToDecimal('I')).toBe(1);
 });
 
+
+test('X is 10 in decimal', () => {
+  expect(romanToDecimal('X')).toBe(10);
+});
