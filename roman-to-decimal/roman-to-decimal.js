@@ -12,9 +12,20 @@ function romanToDecimal(numeral) {
     const characters = numeral.split('');
     let count = 0;
 
+    let previous = 0;
+
     characters.forEach(character => {
-        count+=romanMap[character];
+        const charValue = romanMap[character];
+        count += charValue;
+
+        if (previous < charValue) {
+            count = charValue - previous;
+        }
+
+        previous = charValue;
     })
+
+
     
     return count;
 }
