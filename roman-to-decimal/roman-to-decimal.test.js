@@ -50,6 +50,19 @@ const testProvider = [
     decimal: 49
   },
   {
+    roman: 'CDIV',
+    decimal: 404
+  },
+  {
+    roman: 'XXIV',
+    decimal: 24
+
+  },
+  {
+    roman: 'CMXCIX',
+    decimal: 999
+  },
+  {
     roman: 'L̅X̅X̅X̅X̅V̅I̅I̅I̅DCCLIV',
     decimal: 98754
   },
