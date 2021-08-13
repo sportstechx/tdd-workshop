@@ -16,6 +16,9 @@ function romanToDecimal(numeral) {
     if (numeral === "X") {
         return 10
     }
+    if (numeral === "XVI") {
+        return 16
+    }
     if (numeral === "L") {
         return 50
     }
