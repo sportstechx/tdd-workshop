@@ -1,8 +1,11 @@
 function romanToDecimal(numeral) {
-    if (numeral === 'I') {
-        return 1;
+    const dict = {
+        'I': 1,
+        'V': 5,
+        'M': 1000,
     }
-    return 5
+
+    return dict[numeral];
 }
 
 module.exports = romanToDecimal;
