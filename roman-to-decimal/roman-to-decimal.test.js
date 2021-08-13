@@ -43,3 +43,7 @@ test('XVI is 16 in decimal', () => {
 test('XX is 20 in decimal', () => {
   expect(romanToDecimal('XX')).toBe(20);
 });
+
+test('IV is 4 in decimal', () => {
+  expect(romanToDecimal('IV')).toBe(4);
+});
