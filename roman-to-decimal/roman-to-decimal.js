@@ -1,34 +1,39 @@
 function romanToDecimal(numeral) {
-    // Write your implementation here
-
-    if (numeral === "I") {
-        return 1
+    if (numeral.length === 1) {
+        return singleRomanToDecimal(numeral)
     }
+
     if (numeral === "II") {
         return 2
-    }
-    if (numeral === "V") {
-        return 5
     }
     if (numeral === "VI") {
         return 6
     }
-    if (numeral === "X") {
-        return 10
-    }
     if (numeral === "XVI") {
         return 16
     }
-    if (numeral === "L") {
+}
+
+function singleRomanToDecimal(singleNumeral) {
+    if (singleNumeral === "I") {
+        return 1
+    }
+    if (singleNumeral === "V") {
+        return 5
+    }
+    if (singleNumeral === "X") {
+        return 10
+    }
+    if (singleNumeral === "L") {
         return 50
     }
-    if (numeral === "C") {
+    if (singleNumeral === "C") {
         return 100
     }
-    if (numeral === "D") {
+    if (singleNumeral === "D") {
         return 500
     }
-    if (numeral === "M") {
+    if (singleNumeral === "M") {
         return 1000
     }
 }
