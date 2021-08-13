@@ -4,8 +4,8 @@ function romanToDecimal(numeral) {
         'V': 5,
         'M': 1000,
     }
-
-    return dict[numeral];
+    return numeral.split('')
+        .reduce((acc, current) => acc + dict[current], 0);
 }
 
 module.exports = romanToDecimal;

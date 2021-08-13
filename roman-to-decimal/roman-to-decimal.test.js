@@ -3,6 +3,7 @@ const romanToDecimal = require('./roman-to-decimal');
 cases = [
   ['I', 1],
   ['II', 2],
+  ['IV', 4]
   ['V', 5],
   ['M', 1000],
 ]
