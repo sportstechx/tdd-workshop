@@ -12,15 +12,16 @@ function romanToDecimal(numeral) {
 
     let result = 0;
 
-    while (numeral.length > 0) {
-        Object.keys(dict).forEach((value) => {
-            console.log(numeral)
-            if (numeral.startsWith(value)) {
-                result += dict[value]
-                numeral = numeral.slice(value.length)
-            }
-        })
-    }
+    console.log(numeral)
+    // while (numeral.length > 0) {
+    //     Object.keys(dict).forEach((value) => {
+    //         console.log(numeral)
+    //         if (numeral.startsWith(value)) {
+    //             result += dict[value]
+    //             numeral = numeral.slice(value.length)
+    //         }
+    //     })
+    // }
 
     // // LCIX
 

@@ -8,6 +8,15 @@ cases = [
   ['M', 1000],
 ]
 
-test.each(cases)("%p is %p in decimal", (testCase, expected) => {
-  expect(romanToDecimal(testCase)).toBe(expected)
+test.each(cases)("romanToDecimal(%p) = %p", (a, expected) => {
+  expect(romanToDecimal(a[0])).toBe(a[1])
 })
+
+
+test.each([
+  [1, 1],
+  [2, 2],
+  [3, 3],
+])('.add(%i, ', (a, expected) => {
+  expect(a).toBe(expected);
+});
