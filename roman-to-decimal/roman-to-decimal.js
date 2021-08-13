@@ -1,18 +1,11 @@
 function romanToDecimal(numeral) {
     if (numeral.length === 1) {
         return singleRomanToDecimal(numeral)
-    }
-    if (numeral === "II") {
-        return 2
-    }
-    if (numeral === "VI") {
-        return 6
-    }
-    if (numeral === "XVI") {
-        return 16
-    }
-    if (numeral === "XX") {
-        return 20
+    } else {
+        const numeralMap = numeral.split('');
+        return numeralMap.reduce((acc, curr) => {
+            return acc + singleRomanToDecimal(curr)
+        }, 0)
     }
 }
 
