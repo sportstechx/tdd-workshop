@@ -1,13 +1,50 @@
 const romanToDecimal = require('./roman-to-decimal');
 
-test('V is 5 in decimal', () => {
-  expect(romanToDecimal('V')).toBe(5);
-});
+const testProvider = [
+  {
+    roman: 'V',
+    decimal: 5
+  },
+  {
+    roman: 'VII',
+    decimal: 7
+  },
+  {
+    roman: 'IX',
+    decimal: 9
+  },
+  {
+    roman: 'I',
+    decimal: 1
+  },
+  {
+    roman: 'V',
+    decimal: 5
+  },
+  {
+    roman: 'X',
+    decimal: 10
+  },
+  {
+    roman: 'L',
+    decimal: 50
+  },
+  {
+    roman: 'C',
+    decimal: 100
+  },
+  {
+    roman: 'D',
+    decimal: 500
+  },
+  {
+    roman: 'M',
+    decimal: 1000
+  },
+];
 
-test('VII is 7 in decimal', () => {
-  expect(romanToDecimal('VII')).toBe(7);
-});
-
-test('IX is 9 in decimal', () => {
-  expect(romanToDecimal('IX')).toBe(9);
+test('convert roman to decimal', () => {
+  testProvider.forEach(testCase => {
+    expect(romanToDecimal(testCase.roman)).toBe(testCase.decimal);
+  });
 });
