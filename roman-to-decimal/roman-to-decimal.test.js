@@ -47,8 +47,8 @@ const testProvider = [
   },
 ];
 
-test('convert roman to decimal', () => {
   testProvider.forEach(testCase => {
-    expect(romanToDecimal(testCase.roman)).toBe(testCase.decimal);
+    test(`convert ${testCase.roman} to ${testCase.decimal}`, () => {
+      expect(romanToDecimal(testCase.roman)).toBe(testCase.decimal);
   });
 });
