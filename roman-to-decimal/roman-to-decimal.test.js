@@ -27,3 +27,7 @@ test('D is 500 in decimal', () => {
 test('M is 1000 in decimal', () => {
   expect(romanToDecimal('M')).toBe(1000);
 });
+
+test('II is 2 in decimal', () => {
+  expect(romanToDecimal('II')).toBe(2);
+});
