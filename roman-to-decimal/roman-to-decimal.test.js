@@ -7,3 +7,7 @@ test('V is 5 in decimal', () => {
 test('VII is 7 in decimal', () => {
   expect(romanToDecimal('VII')).toBe(7);
 });
+
+test('IX is 9 in decimal', () => {
+  expect(romanToDecimal('VII')).toBe(9);
+});
