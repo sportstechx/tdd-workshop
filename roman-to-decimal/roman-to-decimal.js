@@ -1,13 +1,4 @@
 function romanToDecimal(numeral) {
-    if(numeral.length === 3) {
-        return 7;
-    }
-    if (numeral.length === 2) {
-        return 9;
-    }
-
-
-        
     const romanMap = {
         I: 1,
         V: 5,
@@ -17,8 +8,15 @@ function romanToDecimal(numeral) {
         D: 500,
         M: 1000,
     };
+
+    const characters = numeral.split('');
+    let count = 0;
+
+    characters.forEach(character => {
+        count+=romanMap[character];
+    })
     
-    return romanMap[numeral];
+    return count;
 }
 
 module.exports = romanToDecimal;
