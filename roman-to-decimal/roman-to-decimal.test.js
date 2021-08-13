@@ -49,6 +49,10 @@ const testProvider = [
     roman: 'XLIX',
     decimal: 49
   },
+  {
+    roman: 'L̅X̅X̅X̅X̅V̅I̅I̅I̅DCCLIV',
+    decimal: 98754
+  },
 ];
 
   testProvider.forEach(testCase => {
