@@ -16,7 +16,10 @@ test('L is 50 in decimal', () => {
   expect(romanToDecimal('L')).toBe(50);
 });
 
-
 test('C is 100 in decimal', () => {
   expect(romanToDecimal('C')).toBe(100);
+});
+
+test('D is 500 in decimal', () => {
+  expect(romanToDecimal('D')).toBe(500);
 });
