@@ -2,6 +2,10 @@ const romanToDecimal = require('./roman-to-decimal');
 
 const testProvider = [
   {
+    roman: 'VI',
+    decimal: 6
+  },
+  {
     roman: 'V',
     decimal: 5
   },
