@@ -13,6 +13,9 @@ function romanToDecimal(numeral) {
     else if (numeral == "C") {
         return 100
     }
+    else if (numeral == "D") {
+        return 500
+    }
     return 5    
 }
 
