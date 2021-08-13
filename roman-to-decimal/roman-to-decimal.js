@@ -4,6 +4,9 @@ function romanToDecimal(numeral) {
     if (numeral == "I") {
         return 1
     }
+    else if (numeral == "X") {
+        return 10
+    }
     return 5    
 }
 
