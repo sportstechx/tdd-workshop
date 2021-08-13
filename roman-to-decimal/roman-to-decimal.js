@@ -15,6 +15,13 @@ function romanToDecimal(numeral) {
     let previous = 0;
 
     characters.forEach(character => {
+        if (character === '\u0305') {
+            count -= previous;
+            count += previous * 1000;
+
+            return;
+        }
+
         const charValue = romanMap[character];
 
         if (previous < charValue) {
