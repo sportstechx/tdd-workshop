@@ -19,11 +19,10 @@ function romanToDecimal(numeral) {
 
     while (numeral.length > 0) {
         for (const [key, value] of Object.entries(dict)) {
-            // console.log(numeral, key, value)
             if (numeral.startsWith(key)) {
                 result += value
-                // console.log(value.length)
                 numeral = numeral.slice(key.length, numeral.length)
+                break
             }
         }
     }
