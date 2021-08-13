@@ -12,31 +12,31 @@ const romanToDecimal = require('./roman-to-decimal');
 //   expect(romanToDecimal(a[0])).toBe(a[1])
 // })
 
-test('romanToDecimal(i) should return 1', () => {
+test('romanToDecimal(I) should return 1', () => {
   expect(romanToDecimal('I')).toBe(1)
 })
 
-test('romanToDecimal(i) should return 2', () => {
+test('romanToDecimal(II) should return 2', () => {
   expect(romanToDecimal('II')).toBe(2)
 })
 
-test('romanToDecimal(i) should return 4', () => {
+test('romanToDecimal(IV) should return 4', () => {
   expect(romanToDecimal('IV')).toBe(4)
 })
 
-test('romanToDecimal(i) should return 1', () => {
+test('romanToDecimal(V) should return 5', () => {
   expect(romanToDecimal('V')).toBe(5)
 })
 
-test('romanToDecimal(i) should return 1', () => {
+test('romanToDecimal(M) should return 1000', () => {
   expect(romanToDecimal('M')).toBe(1000)
 })
 
-test('romanToDecimal(i) should return 9', () => {
+test('romanToDecimal(IX) should return 9', () => {
   expect(romanToDecimal('IX')).toBe(9)
 })
 
-test('romanToDecimal(i) should return 40', () => {
+test('romanToDecimal(XL) should return 40', () => {
   expect(romanToDecimal('XL')).toBe(40)
 })
 

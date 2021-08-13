@@ -28,17 +28,6 @@ function romanToDecimal(numeral) {
         }
     }
     return result;
-
-    // // LCIX
-
-    // const acc = {
-    //     result: 0,
-    //     roman: numeral,
-    // }
-
-    // return numeral.reduce((_acc, current) => {
-
-    // }, acc);
 }
 
 module.exports = romanToDecimal;
