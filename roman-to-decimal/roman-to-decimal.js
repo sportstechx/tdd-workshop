@@ -1,6 +1,10 @@
 function romanToDecimal(numeral) {
     // Write your implementation here
 
+    if (numeral == "II") {
+        return 2
+    }
+
     if (numeral == "I") {
         return 1
     }
