@@ -7,6 +7,9 @@ function romanToDecimal(numeral) {
     else if (numeral == "X") {
         return 10
     }
+    else if (numeral == "L") {
+        return 50
+    }
     return 5    
 }
 
