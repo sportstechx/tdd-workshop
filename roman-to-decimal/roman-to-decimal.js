@@ -1,6 +1,11 @@
 function romanToDecimal(numeral) {
     const dict = {
         'IV': 4,
+        'IX': 9,
+        'XL': 40,
+        'XC': 90,
+        'CD': 400,
+        'CM': 900,
         'I': 1,
         'V': 5,
         'X': 10,
@@ -12,16 +17,17 @@ function romanToDecimal(numeral) {
 
     let result = 0;
 
-    console.log(numeral)
-    // while (numeral.length > 0) {
-    //     Object.keys(dict).forEach((value) => {
-    //         console.log(numeral)
-    //         if (numeral.startsWith(value)) {
-    //             result += dict[value]
-    //             numeral = numeral.slice(value.length)
-    //         }
-    //     })
-    // }
+    while (numeral.length > 0) {
+        for (const [key, value] of Object.entries(dict)) {
+            // console.log(numeral, key, value)
+            if (numeral.startsWith(key)) {
+                result += value
+                // console.log(value.length)
+                numeral = numeral.slice(key.length, numeral.length)
+            }
+        }
+    }
+    return result;
 
     // // LCIX
 
