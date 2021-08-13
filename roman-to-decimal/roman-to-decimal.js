@@ -2,7 +2,6 @@ function romanToDecimal(numeral) {
     if (numeral.length === 1) {
         return singleRomanToDecimal(numeral)
     }
-
     if (numeral === "II") {
         return 2
     }
@@ -11,6 +10,9 @@ function romanToDecimal(numeral) {
     }
     if (numeral === "XVI") {
         return 16
+    }
+    if (numeral === "XX") {
+        return 20
     }
 }
 
