@@ -10,6 +10,9 @@ function romanToDecimal(numeral) {
     else if (numeral == "L") {
         return 50
     }
+    else if (numeral == "C") {
+        return 100
+    }
     return 5    
 }
 
