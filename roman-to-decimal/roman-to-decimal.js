@@ -16,17 +16,16 @@ function romanToDecimal(numeral) {
 
     characters.forEach(character => {
         const charValue = romanMap[character];
-        count += charValue;
 
         if (previous < charValue) {
-            count = charValue - previous;
+            count += charValue - 2 * previous;
+        } else {
+            count += charValue;
         }
 
         previous = charValue;
     })
 
-
-    
     return count;
 }
 
