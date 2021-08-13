@@ -23,3 +23,7 @@ test('C is 100 in decimal', () => {
 test('D is 500 in decimal', () => {
   expect(romanToDecimal('D')).toBe(500);
 });
+
+test('M is 1000 in decimal', () => {
+  expect(romanToDecimal('M')).toBe(1000);
+});
